@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="it" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portos - Sito in Bootstrap</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
+        rel="stylesheet">
+    <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="scss/custom.css" rel="stylesheet">
+
+</head>
+
+<body class="d-flex flex-column h-100 light-mode">
+
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-gradient fixed-top bg-dark">
+            <svg class='fixed-top' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path class='path-top' fill="#F2A71B" fill-opacity="1"
+                    d="M0,96L60,90.7C120,85,240,75,360,69.3C480,64,600,64,720,90.7C840,117,960,171,1080,170.7C1200,171,1320,117,1380,90.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                </path>
+            </svg> 
+            <div class="container">
+              
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" class="img-fluid"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav w-100 justify-content-end mt-sm-3 mt-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active pb-2 pt-2 pb-md-0" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item pb-2 pb-md-0">
+                            <a class="nav-link" href="#servizi">Servizi</a>
+                        </li>
+                        <li class="nav-item pb-2 pb-md-0">
+                            <a class="nav-link" href="#contatti">Contatti</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item pe-3"><a class="nav-link" href="#"><i class="bi-twitter"></i></a></li>
+                        <li class="nav-item pe-3"><a class="nav-link" href="#"><i class="bi-twitch"></i></a></li>
+                        <li class="nav-item pe-3"><a class="nav-link" href="#"><i class="bi-discord"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+                
+            </div>
+           
+        </nav>
+        
+    </header>
+
+
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+        <!-- prima sezione e prima cta -->
+        <section id="first-cta" class="first-cta mt-5">
+            <div class="container">
+                <h1 class="display-3 mt-5 mb-3">La nostra passione si erge sopra ogni cosa</h1>
+                <p class="lead fs-6 text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud..</p>
+                <a href="#" id="servizi" class="btn btn-primary-color p-3 opacity-80">Iscriviti alla lista contatti</a>
+            </div>
+        </section>
+
+
+        <section class="flex-switch">
+            <div>
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                    <i class="bi bi-moon-stars-fill"></i>
+                    <i class="bi bi-brightness-high-fill"></i>
+                    <div class="circle"></div>
+                </label>
+            </div>
+        </section>
+
+
+        <!-- Servizi disponibili utilizzando le cards. Sono tre. -->
+        <section id="services" class="services mt-5 mb-5">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 border-warning">
+                            <div class="card-body">
+                                <i class="bi bi-award h2"></i>
+                                <h5 class="card-title d-inline">Lorem ipsum</h5>
+                                <small class="card-text text-muted d-block mt-4">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quod doloremque alias eligendi, qui velit cum incidunt quasi
+                                    tempora molestiae itaque nobis. Sapiente id tempore temporibus magnam? Numquam
+                                    expedita aperiam minima?</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 border-warning">
+                            <div class="card-body ">
+                                <i class="bi bi-bag-heart h2"></i>
+                                <h5 class="card-title d-inline">Lorem ipsum</h5>
+                                <small class="card-text text-muted d-block mt-4">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quod doloremque alias eligendi, qui velit cum incidunt quasi
+                                    tempora molestiae itaque nobis. Sapiente id tempore temporibus magnam? Numquam
+                                    expedita aperiam minima?</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 border-warning">
+                            <div class="card-body">
+                                <i class="bi bi-chat-square-dots h2"></i>
+                                <h5 class="card-title d-inline">Lorem ipsum</h5>
+                                <small class="card-text text-muted d-block mt-4">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quod doloremque alias eligendi, qui velit cum incidunt quasi
+                                    tempora molestiae itaque nobis. Sapiente id tempore temporibus magnam? Numquam
+                                    expedita aperiam minima?</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Inserisco la sezione delle partnerships -->
+        <section id="partnerships" class="partnerships">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path class='path'fill="#F2A71B" fill-opacity="1"
+                    d="M0,96L60,90.7C120,85,240,75,360,69.3C480,64,600,64,720,90.7C840,117,960,171,1080,170.7C1200,171,1320,117,1380,90.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                </path>
+            </svg>
+            <div class="container">
+                <div class="row text-center">
+                    <h4 class="display-4 mb-3">Partnerships</h4>
+                    <div class="separator"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row partnerships mt-5">
+                    <div class="col-md-3 col-lg-3 partnerships-logo text-center"><img src="images/company1.png" alt=""
+                            class="img-fluid uno mb-5"></div>
+                    <div class="col-md-3 col-lg-3 partnerships-logo text-center"><img src="images/company2.png" alt=""
+                            class="img-fluid due mb-5"></div>
+                    <div class="col-md-3 col-lg-3 partnerships-logo text-center"><img src="images/company3.png" alt=""
+                            class="img-fluid tre mb-5"></div>
+                    <div class="col-md-3 col-lg-3 partnerships-logo text-center"><img src="images/company4.png" alt=""
+                            class="img-fluid quattro mb-5"></div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path class='path-mid' fill="#F2A71B" fill-opacity="1"
+                    d="M0,96L60,90.7C120,85,240,75,360,69.3C480,64,600,64,720,90.7C840,117,960,171,1080,170.7C1200,171,1320,117,1380,90.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                </path>
+            </svg>
+        </section>
+
+        <!-- Posiziono la sezione delle recensioni/testimonianze -->
+        <section id="reviews" class="reviews">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path class='path-mid1' fill="#F2A71B" fill-opacity="1"
+                    d="M0,192L60,197.3C120,203,240,213,360,192C480,171,600,117,720,112C840,107,960,149,1080,149.3C1200,149,1320,107,1380,85.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                </path>
+            </svg>
+            <div class="container">
+                <div class="row text-center py-5">
+                    <h4 class="display-4 mb-3">Le opinioni dei nostri clienti</h4>
+                    <div class="separator"></div>
+                    <div class="row align-items-center">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <!-- Testimonianza 1 -->
+                                <div class="carousel-item active">
+                                    <!-- Inizio la creazione delle card per il carosello -->
+                                    <div class="reviews-card">
+                                        <p class="lh-lg">
+                                        
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                    <div class="reviews-img">
+                                        <img src="images/reviews/reviews-1.jpg" alt="reviews-1"
+                                            class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="reviews-name">
+                                        <h3>Jamie Batty</h3>
+                                    </div>
+                                </div>
+                                <!-- Testimonianza 2 -->
+                                <div class="carousel-item">
+                                    <!-- Inizio la creazione delle card per il carosello -->
+                                    <div class="reviews-card">
+                                        <p class="lh-lg">
+                                            <i class="bi bi-chat-right-quote"></i>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua.
+
+                                        </p>
+                                    </div>
+                                    <div class="reviews-img">
+                                        <img src="images/reviews/reviews-2.jpg" alt="reviews-2"
+                                            class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="reviews-name">
+                                        <h3>Samantha Loret</h3>
+                                    </div>
+                                </div>
+                                <!-- Testimonianza 3 -->
+                                <div class="carousel-item">
+                                    <!-- Inizio la creazione delle card per il carosello -->
+                                    <div class="reviews-card">
+                                        <p class="lh-lg">
+                                            <i class="bi bi-chat-right-quote"></i>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                    <div class="reviews-img">
+                                        <img src="images/reviews/reviews-3.jpg" alt="reviews-3"
+                                            class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="reviews-name">
+                                        <h3>Mike Winter</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+    </main>
+
+    <footer id="contatti" class="footer mt-auto py-3 bg-primary bg-gradient text-light ">
+        <div class="container text-center">
+            <div class="row py-4">
+                <div class="col-md-2 py-4">
+                    
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" class="img-fluid"></a>
+                
+                </div>
+                <div class="col-md-3">
+                    <h4>Mission & Vision</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+         
+                </div>
+                <div class="col-md-3">
+                    <h4>Dove siamo</h4>
+                    <p>Via dei Magazzini Generali 16, <br />
+                        00154 Roma <br /> P.IVA: 15878411006 </p>
+                    
+
+                </div>
+                <div class="col-md-4">
+                    <h4>Contatti</h4>
+                        <p class="mb-0">Email: lorem@me.com</p>
+                        <p>Tel: 02 6756890</p>
+                </div>
+            </div>
+            <small class="text-light">&copy; Francesca per Epicode School </small>
+        </div>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+#first-cta {
+    padding: 7rem 0rem !important;
+    background-color: #00000029;
+    background-blend-mode: multiply;
+    background-image: url(../images/first-cta1.jpg);
+    background-size: 100%;
+    background-position-y: bottom;
+    color: white;
+}
+
+.btn-primary-color {
+    background-color: $primarycolor;
+    color: white;
+}
+
+.btn-primary-color:hover {
+    background-color: darken($color: $primarycolor, $amount: 10%);
+    color: white;
+}
+
+
+.partnerships{
+    align-items: center
+}
+
+.card-body{
+    color: $primarycolor;
+}
+
+#services{
+    .h-100{
+        background-color: rgba(0, 0, 0, 0.015);
+    }
+}

@@ -1,0 +1,74 @@
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    svg.fixed-top {
+        top: 40px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    svg.fixed-top {
+        top: 25px;
+    }
+
+    #first-cta {
+        padding:8rem 0rem 5rem 0rem !important
+    }
+
+    .partnerships{
+        .uno{
+            width: $size *13;
+        }
+        .due{
+            width: 11rem;
+        }
+        .tre{
+            width: 9rem;
+        }
+        .quattro{
+            width: $size *11;
+        }
+        
+    }
+
+    .reviews-img img{
+        width:25rem;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    svg.fixed-top {
+        top: 15px;
+    }
+
+    #first-cta {
+        padding:10rem 0rem 5rem 0rem !important
+    }
+}
+
+@media screen and (min-width:1400px) {
+    svg.fixed-top {
+        top: 15px;
+    }
+
+    #first-cta {
+        padding: 15rem 0rem 7rem 0rem !important;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .partnerships{
+        .uno{
+            width: $size *10;
+        }
+        .due{
+            width: 9.5rem;
+        }
+        .tre{
+            width: 9rem;
+        }
+        .quattro{
+            width: $size *9;
+        }
+    }
+}
+

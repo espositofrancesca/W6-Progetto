@@ -1,0 +1,14 @@
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'variablesCustom';
+@import 'function';
+@import 'header';
+@import 'main';
+@import 'switch';
+@import 'darkmode';
+@import 'footer';
+@import 'media';
+
+* {
+    font-family: $myfont;
+}
