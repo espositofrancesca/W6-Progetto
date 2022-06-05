@@ -28,7 +28,7 @@ $dark-text: #272727;
   }
 }
 
-@mixin tema ($dark-theme: true) {
+@mixin temaUno($dark-theme: true) {
   @if $dark-theme {
     background: lighten($bg-dark, 100%);
     color: darken($light-text, 100%);
@@ -38,8 +38,32 @@ $dark-text: #272727;
   }
 }
 
-/* applicata al div rende lo sfondo bianco e il testo nero */
+
+@mixin temaDue($color) {
+  @if (lightness($color) > 50) {
+    background-color: $color;
+    color: black;
+  }
+  @else {
+    background-color: $color;
+    color: white;
+  }
+}
+
 
 .light {
-  @include tema($dark-theme: true);
+  @include temaUno($dark-theme: true); /* applicata al div rende lo sfondo bianco e il testo nero */
+}
+
+.color{
+  @include temaDue(rgb(255, 255, 255)); /* in base al colore il testo diventerà bianco o nero */
+  width: 400px;
+  height: 100px;
+  text-align: center;
+  border-radius: 10px;
+  margin-left: 5px;
+  h1 {
+    position: relative;
+    top: 30px;
+  }
 }
