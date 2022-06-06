@@ -12123,9 +12123,6 @@ ul.navbar-nav.me-auto.mb-2.mb-md-0 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 5px;
-  position: relative;
-  top: 20px;
-  right: 25px;
   height: 26px;
   width: 50px;
   -webkit-transform: scale(1.5);
